@@ -6,7 +6,9 @@
 
     background-color: var(--White);
 
-    @include mobile {
-        margin-bottom: auto;
+    margin-bottom: auto;
+
+    @include desktop {
+        margin-bottom: 0px;
     }
 }
