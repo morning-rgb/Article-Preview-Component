@@ -1,0 +1,12 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.share-section__share-text {
+    @include normalText;
+    font-weight: 700;
+    letter-spacing: rem(4.5px);
+
+    text-transform: uppercase;
+
+    color: var(--GrayishBlue);
+}

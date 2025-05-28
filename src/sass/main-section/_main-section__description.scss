@@ -1,0 +1,19 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+.main-section__description {
+    @include normalText;
+
+    line-height: rem(20px);
+    letter-spacing: rem(0.1px);
+
+    color: var(--DesaturatedDarkBlue);
+
+    margin-right: rem(3px);
+    margin-top: rem(12px);
+
+    @include desktop {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,10 @@
+@use '../helpers/media' as *;
+@use '../helpers/functions' as *;
+
+.card__main-section {
+    padding: rem(36px) rem(32px) rem(20px) rem(32px);
+
+    @include desktop {
+        padding: rem(32px) rem(40px) rem(32px) rem(40px);
+    }
+}

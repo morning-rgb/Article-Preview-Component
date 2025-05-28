@@ -1,0 +1,12 @@
+@use 'helpers/functions' as *;
+
+:root {
+    --MainFontFamily: "Manrope", sans-serif;
+
+    // colors
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --White: hsl(0, 0%, 100%);
+}

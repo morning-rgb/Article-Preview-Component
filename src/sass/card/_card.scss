@@ -1,0 +1,23 @@
+@use '../helpers/functions' as *;
+@use '../helpers/media' as *;
+
+.card {
+    border-radius: rem(10px);
+
+    max-width: rem(420px);
+
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        max-width: rem(730px);
+
+        display: grid;
+        grid-template-columns: rem(285px) 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    @include mobile {
+        overflow: hidden;
+    }
+}

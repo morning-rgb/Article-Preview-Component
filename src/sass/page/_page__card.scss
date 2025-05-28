@@ -1,0 +1,12 @@
+@use '../helpers/functions' as *;
+@use '../helpers/media' as *;
+
+.page__card {
+    max-width: 100%;
+
+    background-color: var(--White);
+
+    @include mobile {
+        margin-bottom: auto;
+    }
+}

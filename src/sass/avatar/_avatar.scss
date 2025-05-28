@@ -1,0 +1,25 @@
+@use '../helpers/functions' as *;
+@use '../helpers/media' as *;
+
+.avatar {
+    position: relative;
+    display: grid;
+    grid-template-rows: rem(20px) rem(20px);
+    grid-template-columns: rem(40px) 1fr;
+
+    height: rem(40px);
+
+    margin-top: rem(36px);
+
+    column-gap: rem(18px);
+
+    @include desktop {
+        margin-top: rem(20px);
+    }
+}
+
+.avatar.is-active {
+    @include mobile {
+        margin-top: rem(28px);
+    }
+}

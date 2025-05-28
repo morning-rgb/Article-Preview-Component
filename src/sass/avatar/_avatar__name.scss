@@ -1,0 +1,13 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.avatar__name {
+    @include normalText;
+
+    font-size: rem(13px);
+    letter-spacing: rem(0.12px);
+
+    color: var(--VeryDarkGrayishBlue);
+
+    grid-area: 1 / 2 / 2 / 3;
+}

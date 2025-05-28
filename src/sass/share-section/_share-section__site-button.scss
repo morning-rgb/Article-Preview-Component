@@ -1,0 +1,16 @@
+@use '../helpers/functions' as *;
+
+.share-section__site-button {
+    display: block;
+
+    width: rem(20px);
+    height: rem(20px);
+
+    margin-left: min(rem(18px), 3.75vw);
+
+    cursor: pointer;
+
+    &:first-child {
+        margin-left: rem(20px);
+    }
+}

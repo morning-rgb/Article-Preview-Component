@@ -1,0 +1,17 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+.main-section__title {
+    @include titleText;
+
+    line-height: rem(24px);
+    letter-spacing: rem(0.2px);
+
+    color: var(--VeryDarkGrayishBlue);
+
+    @include desktop {
+        font-size: rem(20px);
+        line-height: rem(28px);
+    }
+}

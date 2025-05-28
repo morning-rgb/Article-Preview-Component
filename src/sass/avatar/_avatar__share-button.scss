@@ -1,0 +1,48 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+.avatar__share-button {
+    position: absolute;
+
+    top: rem(4px);
+    right: 0px;
+
+    z-index: 3;
+
+    background-color: var(--LightGrayishBlue);
+
+    --ImageColor: var(--DesaturatedDarkBlue);
+    
+    width: rem(32px);
+    height: rem(32px);
+
+    cursor: pointer;
+
+    @include motionProperties {
+        transition: background-color 0.2s;
+    }
+
+    @include backgroundImage('/Article-Preview-Component/images/icons/icon-share.svg', rem(15px), rem(13px)) {
+        margin-bottom: rem(3px);
+        margin-left: rem(1px);
+
+        @include motionProperties {
+            transition: background-color 0.2s;
+            transition-delay: 0.15s;
+        }
+    }
+}
+
+.avatar__share-button:active {
+    border-width: 0px;
+}
+
+.avatar__share-button.is-active {
+    background-color: var(--DesaturatedDarkBlue);
+    --ImageColor: var(--LightGrayishBlue);
+
+    @include mobile {
+        top: rem(12px);
+    }
+}

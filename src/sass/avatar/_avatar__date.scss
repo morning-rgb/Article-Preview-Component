@@ -1,0 +1,12 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.avatar__date {
+    @include normalText;
+
+    letter-spacing: rem(0.12px);
+
+    color: var(--GrayishBlue);
+
+    grid-area: 2 / 2 / 3 / 3;
+}

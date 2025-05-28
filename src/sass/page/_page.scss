@@ -1,0 +1,19 @@
+@use '../helpers/functions' as *;
+@use '../helpers/media' as *;
+
+.page {
+    min-height: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--LightGrayishBlue);
+
+    padding: rem(74px) rem(24px) rem(81px) rem(24px);
+
+    @include desktop {
+        padding-inline: rem(72px);
+    }
+}
